@@ -9,9 +9,20 @@ import SwiftUI
 
 @main
 struct AllocateApp: App {
+    @StateObject private var viewManager = ViewManager()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            Group {
+                switch viewManager.currentView {
+                    case .summary:
+                        ContentView()
+                    case .wishlist:
+                        WishlistView()
+                    case .assets:
+                        ContentView()
+                }
+            }
+            .environmentObject(viewManager)
         }
     }
 }
