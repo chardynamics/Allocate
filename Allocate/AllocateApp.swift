@@ -19,7 +19,17 @@ struct AllocateApp: App {
                     case .wishlist:
                         WishlistView()
                     case .assets:
-                        ContentView()
+                        AssetsView()
+                    case .addAsset:
+                        AddView()
+                    case .addDeposit:
+                        AddView()
+                    case .addPurchase:
+                        AddView()
+                    case .addWishlist:
+                        AddView()
+                    case .records:
+                        AddView()
                 }
             }
             .environmentObject(viewManager)

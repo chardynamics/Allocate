@@ -8,11 +8,16 @@
 import Foundation
 
 class ViewManager: ObservableObject {
-    @Published var currentView: managerViews = .wishlist
+    @Published var currentView: managerViews = .summary
     
     enum managerViews {
         case summary
         case wishlist
         case assets
+        case records
+        case addWishlist
+        case addAsset
+        case addPurchase
+        case addDeposit
     }
 }

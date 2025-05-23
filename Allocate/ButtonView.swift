@@ -19,7 +19,7 @@ struct ButtonView: View {
                                 currentView.currentView = .assets
                             }
                             .disabled(currentView.currentView == .assets)
-                            Button("Wishlist") {
+                            Button("Savings Target") {
                                 currentView.currentView = .wishlist
                             }
                             .disabled(currentView.currentView == .wishlist)
@@ -42,13 +42,26 @@ struct ButtonView: View {
                                 .clipShape(RoundedRectangle(cornerRadius: 20))
                         }
                         Menu {
-                            Button("Add A Item") {
-                                //screen = "AddScreen"
+                            Button("Change Records") {
+                                currentView.currentView = .records
                             }
-                            Button("Import Portfolio") {
-                                //screen = "AddScreen"
+                            .disabled(currentView.currentView == .records)
+                            Button("Add Asset") {
+                                currentView.currentView = .addAsset
                             }
-                            .disabled(true)
+                            .disabled(currentView.currentView == .addAsset)
+                            Button("Add Wishlist Item") {
+                                currentView.currentView = .addWishlist
+                            }
+                            .disabled(currentView.currentView == .addWishlist)
+                            Button("Add Deposit") {
+                                currentView.currentView = .addDeposit
+                            }
+                            .disabled(currentView.currentView == .addDeposit)
+                            Button("Add Purchase") {
+                                currentView.currentView = .addPurchase
+                            }
+                            .disabled(currentView.currentView == .addPurchase)
                         } label: { Button(action: {
                             
                         }) {
@@ -63,7 +76,7 @@ struct ButtonView: View {
                             .clipShape(RoundedRectangle(cornerRadius: 20))
                         }
                     }
-                        .padding(EdgeInsets(top:0, leading: 10, bottom: 0, trailing: 20))
+                        .padding(EdgeInsets(top:10, leading: 0, bottom: 0, trailing: 15))
                 }
             }
         }

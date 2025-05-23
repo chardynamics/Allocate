@@ -310,7 +310,6 @@ struct ContentView: View {
                     .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottomLeading)
             }
         }
-        Spacer()
     }
 }
 
