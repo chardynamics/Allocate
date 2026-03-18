@@ -2,7 +2,8 @@
 <br />
 <div align="center">
   <a href="https://gitlab.com/chardynamics/Allocate">
-    <img src="https://gitlab.com/chardynamics/chardynamics.gitlab.io/-/raw/main/public/assets/images/logos/productions.png" alt="Logo" width="748" height="524">
+    <img src="https://raw.githubusercontent.com/chardynamics/Allocate/15b4488e9e958a7911bdd3e3115e7eaa047179f3/thumbnail.png" alt="Logo" width="374" height="262">
+    https://github.com/user-attachments/assets/0bddeede-e4b8-4531-b92c-f880d313861b
   </a>
 
 <h3 align="center">Allocate</h3>
